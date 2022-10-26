@@ -7,7 +7,6 @@ class Undergrad :public Student
 public:
 
 	virtual void Learn(int chosenModule)override;
-	virtual void SetModual()
 	
 protected:
 	
@@ -18,6 +17,6 @@ protected:
 		ToyDesign = 20,
 		Assembly = 50
 	};
-
+	Modules modules;
 	
 };

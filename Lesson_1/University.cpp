@@ -37,6 +37,22 @@ void University::DisplayStudentInfo()
 }
 
 
+void University::Login()
+{
+	std::cout << "Please enter Username" << std::endl;
+	std::getline(std::cin, username);
+	if (username == "Cameron" || "cameron")
+	{
+		std::cout << "Password: ";
+		std::getline(std::cin, password);
+		if (password != "1234")
+		{
+			std::cout << "Invalid are trying to hack!";
+		}
+		else { std::cout << "Invalid Username. try again!"; }
+	}
+}
+
 void University::HoldLecture()
 {
 	if (students.empty())

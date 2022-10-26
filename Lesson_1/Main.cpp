@@ -2,7 +2,7 @@
 #include <iostream>
 #include <array>
 #include "University.h"
-//#include "Student.h"
+#include "Student.h"
 #include "Undergrad.h"
 #include "Masters.h"
 #include "Phd.h"
@@ -25,7 +25,7 @@ int main()
 	john->SetAge(23);
 	john->SetNumber("07367854219");
 	john->SetAddress("23 Smithy Rd, London");
-	//john.SetModule(Student::Modules::AdvancedAI);
+	                                         //john.SetModule(Student::Modules::AdvancedAI);
 
 	james->SetName("James Bond");
 	james->SetID(8976);
@@ -74,6 +74,8 @@ int main()
 	londonMet.DisplayBrochure();
 	londonMet.DisplayStudentInfo();
 	londonMet.HoldLecture();
+
+	
 
 	system("pause");
 	return 0;
